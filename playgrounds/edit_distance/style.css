@@ -1,0 +1,33 @@
+#edit-container {
+    max-height: 100%;
+}
+
+#explanation {
+    max-height: 70%;
+    overflow-y: scroll;
+    box-shadow: 0 0 0 3px inset black;
+}
+#explanation p {
+    margin: 10%;
+}
+#explanation h2 {
+    margin: 5%;
+}
+a {
+    --accent-a: rgb(62, 166, 241);
+    --accent-s: rgb(114, 205, 82);
+    --accent-m: rgb(235, 103, 222);
+    --bg-dark:  rgb(51, 51, 51);
+    --bg-light: rgb(219, 219, 219);
+    color: var(--accent-a);
+    text-decoration: none;
+}
+a:visited {
+    color: var(--accent-m);
+}
+a:hover {
+    color: var(--accent-s);
+}
+a:active {
+    color: var(--accent-m);
+}

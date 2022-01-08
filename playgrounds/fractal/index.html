@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../icons/logo-s.png">
+    <link rel="stylesheet" href="../playground_style.css"></a>
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
+
+    <title>Fractal</title>
+</head>
+<body>
+    <h1 style="height: 30px; margin: 10;">Fractal Generator</h1>
+        <div style="margin: 5px; height: 40px">
+            <label for="complexity_slider">Complexity:</label>
+            <input type="number" style="display:inline" value="4" min="0" max="7" id="complexity_slider">
+            <label for="depth_slider">Depth:</label>
+            <input type="number" style="display:inline" value = "4" min="0" max="5" id="depth_slider">
+            <button id="new">Another!</button>
+            <p style="display: inline;">Click circles to move points!</p>
+        </div>
+
+        <div id="canvas">
+           
+        </div>
+
+    <script src="fractals.js"></script>
+</body>
+</html>
+
+
+

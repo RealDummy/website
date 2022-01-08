@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../../icons/logo-s.png">
+    <link rel="stylesheet" href="../playground_style.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>OSA</title>
+</head>
+<body>
+    <h1>Edit Distance</h1>
+    <div class="container">
+        <div class="controls">
+            <h2>controls</h2>
+            <p>Enter initial(A) and target(B) strings and click enter to see shortest edit paths. </p>
+        </div>
+            <div id="edit-container">
+                <div>
+                    <label for="string-a">String A: </label>
+                    <input type="text" id="string-a" name="string-a" value="kitten"><br>
+                    <label for="string-b">String B: </label>
+                    <input type="text" id="string-b" name="string-b" value="sitting"><br>
+                    <button id="compareButton">Compare</button>
+                </div>
+                <div id="explanation"></div>
+            </div>
+        <div class="description">
+            <h2>Description</h2>
+            <p> I use dynamic programming to find the shortest edit distance 
+                (<a href="https://en.wikipedia.org/wiki/Damerau%E2%80%93Levenshtein_distance#Optimal_string_alignment_distance" target="_blank">Optimal String Aligment</a>), and then backtrack 
+                through the resulting matrix to figure out the paths the algorithm made.
+            </p>
+        </div>
+    </div>
+    <script src="editDistance.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
