@@ -137,7 +137,7 @@ function genRadomPoints(x,y,w,h, n) {
         ));
     }
     res.sort((a,b) => {
-        return a.x > b.x;
+        return a.x - b.x;
     });
     return res;
 }
