@@ -112,6 +112,10 @@ body {
     color: var(--accent-m);
 }
 
+.icon {
+    z-index: -1;
+}
+
 #abt {
     display: flex;
     flex-direction: column;
