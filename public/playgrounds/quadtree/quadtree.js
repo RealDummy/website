@@ -119,15 +119,15 @@ class Point{
     update(){
         this.x += this.vX;
         this.y += this.vY;
-        this.vX *= .98;
-        this.vY *= .98;
+        this.vX *= .6;
+        this.vY *= .6;
         if(this.x < 0 || this.x > height){
             this.vX *= -1;
-            this.x += this.vX;
+            this.x += this.vX * 3;
         }
         if(this.y < 0 || this.y > height){
             this.vY *= -1;
-            this.y += this.vY;
+            this.y += this.vY * 3;
         }
     }
     near(point){

@@ -20,7 +20,7 @@ function draw(){
 	});
 	quad = new QuadTree(0,0,width,height,points);
 	points.forEach( (item)=>{
-		let l = quad.getPointsInRadius(item.x,item.y,100);
+		let l = quad.getPointsInRadius(item.x,item.y,70);
 		for(let p of l){
 			item.near(p);
 		}

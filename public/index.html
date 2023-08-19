@@ -4,91 +4,104 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="nav.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="./icons/logo-s.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@300;700&display=swap" rel="stylesheet">
-    <title></title>
+    <title>Document</title>
 </head>
 <body>
-    <div id="header-wrapper">
-        <div id="header">
-            <div class="blank-space" id="blank1"></div>
-            <div class="logo">
-                <svg viewBox="0 0 261 261" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="191.492" y="122.751" width="62.4947" height="27.7754" transform="rotate(45 191.492 122.751)" fill="#3EA6F1"/>
-                    <rect x="142.391" y="122.751" width="62.4947" height="27.7754" transform="rotate(45 142.391 122.751)" fill="#3EA6F1"/>
-                    <rect x="117.841" y="147.301" width="27.7754" height="27.7754" transform="rotate(45 117.841 147.301)" fill="#3EA6F1"/>
-                    <rect x="68.7407" y="49.1005" width="62.4947" height="27.7754" transform="rotate(45 68.7407 49.1005)" fill="#72CD52"/>
-                    <rect x="44.1904" y="73.6507" width="97.2139" height="27.7754" transform="rotate(45 44.1904 73.6507)" fill="#72CD52"/>
-                    <rect x="44.1904" y="122.751" width="62.4947" height="27.7754" transform="rotate(45 44.1904 122.751)" fill="#72CD52"/>
-                    <rect x="166.941" y="49.1005" width="97.2139" height="27.7754" transform="rotate(45 166.941 49.1005)" fill="#EB67DE"/>
-                    <rect x="142.391" y="73.6507" width="62.4947" height="27.7754" transform="rotate(45 142.391 73.6507)" fill="#EB67DE"/>
-                    <rect x="117.841" y="98.2009" width="27.7754" height="27.7754" transform="rotate(45 117.841 98.2009)" fill="#EB67DE"/>
-                </svg>
-            </div>
-            <div class="blank-space" id="blank2"></div>
-        </div>
-    </div>
-    <div id="header-hole"></div>
-    <div id="content-wrapper">
-        <div id="content">
-
-            <h1 id="about">About Me</h1>
-            <div id="abt">
-                <p>
-                    I am currently a student at UCSC studying for a computer science bachelors degree. 
-                    I have been coding since elementary school, when I started making fun games in Scratch.
-                    Outside of programming, I enjoy Magic: the Gathering, the gym, and learning new things.
-                </p>
-                <h3>Current Favorite Languages:</h3>
-                <div class="language-icons">
-                    <img class= "icon" src="./icons/rust.png" alt="rust" title="Rust">
-                    <img class= "icon" src="./icons/cpp.png" alt="c++" title="C++">
-                    <img class= "icon" src="./icons/javascript.png" alt="javascript" title="Javascript">
+    <div class="b1 ball"></div>
+    <div class="b2 ball"></div>
+    <div class="b3 ball"></div>
+    <nav> 
+        <div class="navbar">
+            <div class="logo-tab">
+                <a class="logo-box" href="./index.html"> 
+                    <svg viewBox="0 0 261 261" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="191.492" y="122.751" width="62.4947" height="27.7754" transform="rotate(45 191.492 122.751)" fill="#3EA6F1"/>
+                        <rect x="142.391" y="122.751" width="62.4947" height="27.7754" transform="rotate(45 142.391 122.751)" fill="#3EA6F1"/>
+                        <rect x="117.841" y="147.301" width="27.7754" height="27.7754" transform="rotate(45 117.841 147.301)" fill="#3EA6F1"/>
+                        <rect x="68.7407" y="49.1005" width="62.4947" height="27.7754" transform="rotate(45 68.7407 49.1005)" fill="#72CD52"/>
+                        <rect x="44.1904" y="73.6507" width="97.2139" height="27.7754" transform="rotate(45 44.1904 73.6507)" fill="#72CD52"/>
+                        <rect x="44.1904" y="122.751" width="62.4947" height="27.7754" transform="rotate(45 44.1904 122.751)" fill="#72CD52"/>
+                        <rect x="166.941" y="49.1005" width="97.2139" height="27.7754" transform="rotate(45 166.941 49.1005)" fill="#EB67DE"/>
+                        <rect x="142.391" y="73.6507" width="62.4947" height="27.7754" transform="rotate(45 142.391 73.6507)" fill="#EB67DE"/>
+                        <rect x="117.841" y="98.2009" width="27.7754" height="27.7754" transform="rotate(45 117.841 98.2009)" fill="#EB67DE"/>
+                    </svg>
+                </a>
+                <div class="curve-wrapper">
+                    <div class="curve-box"></div>
+                    <div class="curve"></div>
                 </div>
             </div>
-            <h1 id="repos">Code Samples</h1>
-            <a href="https://github.com/RealDummy?tab=repositories">
-                <img width="25" height="25" src="./icons/github.png" class= "icon" style="position: relative; top: 6.25px;">
-                GitHub
-            </a>
-            <h1 id="playground">Playground</h1>
-            <div id="play-link-container">
-                <a href="playgrounds/quadtree/index.html">
-                    <div class="play-link">
-                        <img class= "icon"  src="icons/quad.png">
-                        <p>Quadtree</p>
+            <div class="navbar-bar">
+                <div class="left" >
+                    <a class="sam-shadow" href="./index.html">ABOUT</a>
+                    <a class="sam-shadow" href="./index.html#play">PLAYGROUND</a>
+                    <a class="sam-shadow" href="SamWortzmanResume.pdf">RESUME</a>
+                </div>
+                <div class="right">
+                    <div class="icon">
+                        <a class="icon-link" href="https://github.com/RealDummy">
+                            <img src="./img/github.svg">
+                        </a>
                     </div>
-                </a>
-                <a href="playgrounds/polynomial/index.html">
-                    <div class="play-link">
-                        <img class= "icon" src="icons/poly.png">
-                        <p>Polynomial Finder</p>
+                    <div class="icon">
+                        <a class="icon-link" href="https://www.linkedin.com/in/sam-wortzman-b673b2209/">
+                            <img src="./img/linkedin.svg">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <p class="sam-shadow title">Hello,</p>
+        <div class="blurb">
+            <p>
+                I'm Sam. I am recent UC Santa Cruz graduate, with a B.S. in computer science from Baskin School of Engineering. 
+                I have been coding since elementary school, when I started making games in Scratch. 
+                Outside of programming, I enjoy Magic: the Gathering, Chess,
+                and learning new things. </p>
+        </div>
+        <p class="sam-shadow title" id="play">Play!</p>
+        <div class="blurb">
+            <p>Here are some fun little projects to play around with. 
+                They may not work well on mobile!</p>
+            <div class="card-grid">
+                <a href="playgrounds/fractal/index.html">
+                    <div class="playcard sam-shadow">
+                        <p>Fractal Generator</p>
+                        <img src="img/fractal.png"/>
                     </div>
                 </a>
                 <a href="playgrounds/edit_distance/index.html">
-                    <div class="play-link">
-                        <img class= "icon" src="icons/osad.png"> 
-                        <p>Edit Distance</p>
+                    <div class="playcard sam-shadow">
+                        <p>Edit Distance Calculator</p>
+                        <img src="img/osa.png"/>
                     </div>
                 </a>
-                <a href="playgrounds/fractal/index.html">
-                    <div class="play-link">
-                        <img class= "icon" src="icons/frac.png"> 
-                        <p>Fractal Generator</p>
+                
+                <a href="playgrounds/quadtree/index.html">
+                    <div class="playcard sam-shadow">
+                        <p>Quadtree Test</p>
+                        <img src="img/quad.png"/>
+                    </div>
+                </a>
+                <a href="playgrounds/polynomial/index.html">
+                <div class="playcard sam-shadow">
+                        <p>Polynomial Builder</p>
+                        <img src="img/poly.png"/>
                     </div>
                 </a>
                 <a href="playgrounds/simon/index.html">
-                    <div class="play-link">
-                        <img class= "icon" src="icons/simon.png"> 
-                        <p>Among Us Simon Says Task</p>
+                <div class="playcard sam-shadow">
+                        <p >Simon (Among Us Task)</p>
+                        <img src="img/mogus.png"/>
                     </div>
                 </a>
             </div>
         </div>
-    </div>
-    <script src="render.js"></script>
+    </main>
 </body>
+<script src="render.js"></script>
 </html>

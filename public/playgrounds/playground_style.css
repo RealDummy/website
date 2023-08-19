@@ -3,11 +3,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@700&display=swap');
 
 body {
-    background-repeat: repeat;
-    background-image: url(../icons/paper.png);
-    font-family: 'Red Hat Mono', monospace;
-    height: 95vh;
-    overflow:hidden;
+    height: 100vh;
+    overflow: hidden;
+    padding-top: 70px;
+}
+
+.navbar{ 
+    --n: 0;
+}
+
+h1 {
+    margin: 30px;
 }
 
 .container {
@@ -16,17 +22,21 @@ body {
     justify-content: space-around;
     line-height: 1.5em;
     max-height: 100%;
-
+    margin: 2em;
 }
-
+ p a {
+    color: var(--m);
+ }
+ p a:visited {
+    color: var(--a);
+ }
+ p a:hover {
+    color: var(--s);
+ }
 .container>div{
     min-width: min-content;
     max-width: 33%;
     max-height: 100%;
-}
-
-canvas {
-    outline: 3px solid black;
 }
 
 .description {

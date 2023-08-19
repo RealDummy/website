@@ -155,10 +155,10 @@ function analyze(m,a,b) {
         
     }
     let resdiv = document.createElement("div");
-    for(let i = 0; i < Math.min(paths.length,9); ++i) {
+    for(let i = 0; i < 1; ++i) {
         let tdiv = document.createElement("div");
         let header = document.createElement("h2");
-        header.innerText = `Edit Path #${i + 1}`;
+        header.innerText = `Edit Path`;
         tdiv.appendChild(header);
         for(let op of paths[i]) {
             let p = document.createElement('p');

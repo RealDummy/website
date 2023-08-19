@@ -37,7 +37,7 @@ class polynomial{
             let power = this.degree - i;
             //i am truly sorry for this
             if(this.coefficients[i] !== 0){
-                str += `${str !== "" ? (this.coefficients[i]>0 ? " + ":" - ") :this.coefficients[i]>0 ? " ":"-"}${Math.abs(Math.round(this.coefficients[i]*100)/100)}${power > 0 ? 'x':''}${power>1 ? '<sup>'+power+'</sup>':''}`;
+                str += `${str !== "" ? (this.coefficients[i]>0 ? " + ":" - ") :this.coefficients[i]>0 ? " ":"-"}${Math.abs(Math.round(this.coefficients[i]*1000)/1000)}${power > 0 ? 'x':''}${power>1 ? '<sup>'+power+'</sup>':''}`;
             }
             
         }
@@ -81,7 +81,7 @@ class polyPoint{
 
 //a graph class that draws a polynomial based on where points are added
 class graph{
-    constructor(width,height,scale=10,resolution = 0.2,position={x:0,y:0},offset={x:0,y:0},maxPoints=10){
+    constructor(width,height,scale=10,resolution = 0.2,position={x:0,y:0},offset={x:0,y:0},maxPoints=6){
         this.width = width;
         this.height = height;
         this.scale = scale;

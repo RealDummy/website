@@ -1,159 +1,63 @@
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    overscroll-behavior: none;
-
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono:wght@700&display=swap');
-
-:root{
-    --accent-a: rgb(62, 166, 241);
-    --accent-s: rgb(114, 205, 82);
-    --accent-m: rgb(235, 103, 222);
-    --bg-dark:  rgb(51, 51, 51);
-    --bg-light: rgb(219, 219, 219);
-    --hide-percent: 0;
-}
-body {
-    background-color: var(--bg-light);
-
-}
-#header-wrapper {
-    
-    width: 100vw;
-    height: calc(30vh - 0.15vh * var(--hide-percent));
-    position: fixed;
-    overflow: hidden;
-    pointer-events: none;
-}
-#header {
-    background-color: var(--bg-dark);
+main {
     width: 100%;
-    --border-radius: calc(5.0vh - var(--hide-percent) * .05vh);
-    --header-height: calc(77% - 0.35% * var(--hide-percent));
-    height: var(--header-height);
-    display: flex;
-    flex-direction: row;
 }
-#header-hole {
-    height: calc(30vh - 0.15vh * var(--hide-percent) + 5vh);
-    opacity: 0;
-}
-.blank-space {
-    background-color: var(--bg-light);
+.title {
     position: relative;
-    top: calc(100% - var(--border-radius));
-    width: 100%;
-    height: calc(var(--border-radius)*1.1);
-}
-.blank-space:first-of-type {
-    border-radius: 0px var(--border-radius) 0px 0px;
-}
-.blank-space:last-of-type {
-    border-radius: var(--border-radius) 0px 0px 0px;
+    left: 25px;
+    font-size: 3rem;
+    width: max-content;
+    font-weight: 600;
+    top: 0.5rem;
 }
 
-.logo {
-    position: relative;
-    background-color: var(--bg-dark);
-    border-radius: 0px 0px var(--border-radius) var(--border-radius);
-    width: calc(0.8 * var(--header-height));
-    height: calc(130% - 0.3% * var(--hide-percent));
-    z-index: 1;
-}
-.logo svg {
-    width: 100%;
-    height: 100%;
-}
+.blurb {
+    font-family: 'Libre Franklin', sans-serif;
+    padding: 50px 80px;
+    background-color: var(--nav-color);
+    width: 65%;
+    box-sizing: border-box;
+    border-radius: 0 25px 25px 0;
+    font-weight: 300;
+    box-shadow: -4px 4px 5px 0px rgb(0,0,0, 0.5);
+    margin-bottom: 100px;
 
-#content-wrapper {
-    width: 100%;
-    height: 100%;
-    overflow-y: hidden;
-    overflow-x: hidden;
-
-    
 }
 
-#content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-family: 'Red Hat Mono', monospace;
-    scroll-behavior: smooth;
-    padding-bottom: 100px;
+.card-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
-#content h1 {
-    text-decoration: none;
+.playcard {
     margin: 1em;
-    font-weight: 700;
-}
-#content h1:nth-of-type(1n+1){
-    margin-top: 2em;
-}
-#content a {
-    color: var(--accent-a);
-    text-decoration: none;
-    margin: none;
-}
-#content a:visited {
-    color: var(--accent-m);
-}
-#content a:hover {
-    color: var(--accent-s);
-}
-#content a:active {
-    color: var(--accent-m);
+    padding: 30px;
 }
 
-.icon {
-    z-index: -1;
+a:nth-child(3n+1) .playcard:hover img {
+    outline: 5px solid var(--s);
+}
+a:nth-child(3n+2) .playcard:hover img {
+    outline: 5px solid var(--a);
+}
+a:nth-child(3n) .playcard:hover img {
+    outline: 5px solid var(--m);
 }
 
-#abt {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.playcard p {
+    font-size: 3rem;
+    color: inherit;
+    animation: inherit;
 }
-#abt p {
-    width: 50%;
-    margin-bottom: 2em;
-}
-
-#abt img {
-    width: 100px;
-    height: 100px;
-}
-
-#play-link-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-#play-link-container>a {
+.playcard img {
+    margin-top: 10px;
     width: 100%;
-    height: 100%;
-}
-.play-link {
-    display: flex;
-    flex-direction: row;
-    margin: 5px;
-    align-items: center;
-    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 30px;
 }
 
-.play-link>img {
-    width: 100px;
-    height: 100px;
-    clip-path: inset(10px 10px round 5px);
-}
 
-.play-link:hover {
-    outline: 3px dashed var(--bg-dark);
+@media only screen and (max-width: 800px) {
+    .blurb {
+        width: 100%;
+    }
 }

@@ -1,12 +1,8 @@
-const header = document.querySelector(":root");
-let header_timeout = false;
-document.addEventListener('scroll', (e) => {
-    if(!header_timeout){
-        header_timeout = true;
-        requestAnimationFrame(()=>{
-            header.style.setProperty("--hide-percent", String(Math.min(window.scrollY / window.innerHeight * 800,100)))
-            header_timeout = false;
-        });
-    }
-
-})
+const nav = document.querySelector(".navbar");
+function check_scroll() {
+    let n = 1 - window.scrollY / 200;
+    n = Math.min(1 , Math.max(0, n));
+    nav.style.setProperty("--n", n);
+    requestAnimationFrame(check_scroll);
+}
+requestAnimationFrame(check_scroll);
