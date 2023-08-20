@@ -235,6 +235,17 @@ nav{
         drop-shadow(1px 1px 0px var(--s))
         drop-shadow(1px 1px 0px var(--m));
     }
+    100% {
+        filter: invert(100%) 
+        sepia(95%) 
+        saturate(0%) 
+        hue-rotate(164deg) 
+        brightness(104%) 
+        contrast(100%) 
+        drop-shadow(1px 1px 0px var(--s))
+        drop-shadow(1px 1px 0px var(--m))
+        drop-shadow(1px 1px 0px var(--a));
+    }
 }
 .icon img:hover {
     animation: 1.2s linear 0s infinite forwards shift;
